@@ -1,5 +1,6 @@
 #!/bin/bash
 cd /home/zaphkito/Source
+rm -rf OpenWrt
 git clone https://github.com/coolsnowwolf/lede OpenWrt
 cd OpenWrt
 echo "src-git openclash https://github.com/vernesong/OpenClash" >> ./feeds.conf.default
