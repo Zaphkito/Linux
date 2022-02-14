@@ -10,4 +10,4 @@ echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall" >> ./feeds
 wget https://github.com/Zaphkito/Linux/raw/main/Source/OpenWrt/.config
 make defconfig
 make -j8 download V=s
-make -j$(nproc) || make -j1 || make -j1 V=s
+make -j$(nproc) V=s || make -j1 || make -j1 V=s
