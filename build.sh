@@ -8,6 +8,7 @@ sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo wget https://issuepcdn.baidupcs.com/issue/netdisk/LinuxGuanjia/4.3.0/baidunetdisk_4.3.0_amd64.deb
 sudo dpkg -i baidunetdisk_4.3.0_amd64.deb
+wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh
 rm -rf google-chrome-stable_current_amd64.deb
 rm -rf baidunetdisk_4.3.0_amd64.deb
 cd /home/zaphkito
