@@ -6,7 +6,6 @@ cd OpenWrt
 echo "src-git openclash https://github.com/vernesong/OpenClash" >> ./feeds.conf.default
 echo "src-git helloworld https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
 echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall" >> ./feeds.conf.default
-echo "src-git adguardhome https://github.com/uamrws/luci-app-adguardhome" >> ./feeds.conf.default
 ./scripts/feeds update -a && ./scripts/feeds install -a
 wget https://github.com/Zaphkito/Linux/raw/main/Source/OpenWrt/.config
 make defconfig
