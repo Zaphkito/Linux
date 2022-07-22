@@ -7,6 +7,7 @@ echo "src-git openclash https://github.com/vernesong/OpenClash" >> ./feeds.conf.
 echo "src-git helloworld https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
 echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall" >> ./feeds.conf.default
 git clone https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
+git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
 ./scripts/feeds update -a && ./scripts/feeds install -a
 wget https://github.com/Zaphkito/Linux/raw/main/Source/OpenWrt/.config
 make defconfig
