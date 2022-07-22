@@ -5,9 +5,11 @@ git clone https://github.com/coolsnowwolf/lede OpenWrt
 cd OpenWrt
 echo "src-git openclash https://github.com/vernesong/OpenClash" >> ./feeds.conf.default
 echo "src-git helloworld https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
-echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall" >> ./feeds.conf.default
+echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall2" >> ./feeds.conf.default
+git clone https://github.com/xiaorouji/openwrt-passwall package/passwall
 git clone https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
+git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 ./scripts/feeds update -a && ./scripts/feeds install -a
 wget https://github.com/Zaphkito/Linux/raw/main/Source/OpenWrt/.config
 make defconfig
